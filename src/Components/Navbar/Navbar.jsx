@@ -11,7 +11,7 @@ function Navbar({ about, skills, project, education, contact }) {
 
     return (
         <nav className="h-14 w-full md:sticky fixed bg-neutral-800 flex justify-between md:px-4  items-center ">
-            <div className="text-2xl hidden md:block text-white font-bold"><i className="fa-solid fa-compass"></i> PORTFOLIO</div>
+            <div className="text-2xl w-fit md:flex gap-4 hidden  text-white font-bold"><i className="fa-solid fa-compass"></i> PORTFOLIO</div>
 
             <ul className="flex justify-center w-full md:font-bold text-white">
                 <li onClick={() => scrollToSection(about)} className="md:mx-[20px] mx-[10px] cursor-pointer">About</li>
@@ -23,7 +23,7 @@ function Navbar({ about, skills, project, education, contact }) {
 
 
 
-            <div className="hidden md:block px-2 py-2 bg-indigo-700 text-white rounded font-bold cursor-pointer">
+            <div className="hidden w-40 md:flex px-2 py-2 bg-indigo-700 text-white rounded font-bold cursor-pointer">
                 <a href="https://github.com/SaurabhJethuri">Github Profile</a>
             </div>
 
