@@ -13,7 +13,7 @@ const data = [
     },
     {
         title: "Portfolio",
-        description: "React, Tailwind CSS",
+        description: "React, Tailwind CSS, Formspree",
         gitUrl: "https://github.com/SaurabhJethuri/Portfolio",
         imgUrl: "/images/Portfolio.jpg"
     },
