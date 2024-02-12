@@ -4,7 +4,7 @@ function About({ about }) {
     return (
         <div ref={about} className=" w-[100%] h-auto flex md:pt-0 pt-16 flex-col md:flex-row flex-wrap items-center">
             <div className="w-[90%] md:w-[30%] h-auto mx-4 my-4 bg-neutral-800 ">
-                <div className="text-2xl md:hidden flex justify-center text-white font-bold"><i className="fa-solid fa-compass py-2 px-2 pt-2"></i> PORTFOLIO</div>
+
                 <div className='flex justify-center '>
                     <img className=' w-96 h-96 rounded-full' src="https://res.cloudinary.com/dkfa7he1b/image/upload/v1707673164/PortfolioData/IMG_20231116_204110_di8idt.jpg" alt="" />
 

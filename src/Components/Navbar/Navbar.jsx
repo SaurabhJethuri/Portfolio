@@ -13,7 +13,7 @@ function Navbar({ about, skills, project, education, contact }) {
         <nav className="h-14 w-full md:sticky fixed bg-neutral-800 flex justify-between md:px-4  items-center ">
             <div className="text-2xl hidden md:block text-white font-bold"><i className="fa-solid fa-compass"></i> PORTFOLIO</div>
 
-            <ul className="flex md:font-bold text-white">
+            <ul className="flex justify-center w-full md:font-bold text-white">
                 <li onClick={() => scrollToSection(about)} className="md:mx-[20px] mx-[10px] cursor-pointer">About</li>
                 <li onClick={() => scrollToSection(skills)} className="md:mx-[20px] mx-[10px] cursor-pointer">Skills</li>
                 <li onClick={() => scrollToSection(project)} className="md:mx-[20px] mx-[10px] cursor-pointer">Projects</li>

@@ -1,27 +1,88 @@
-import React from 'react'
-
-function Contact({ contact }) {
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+function ContactSection() {
+    const [state, handleSubmit] = useForm("xqkrqklg");
+    if (state.succeeded) {
+        for (const form of document.getElementsByTagName('form')) {
+            form.reset();
+        }
+    }
     return (
-        <div ref={contact} className='w-[100%] h-auto text-white flex flex-col md:flex-row flex-wrap items-center'>
-            <div className=' w-[90%] md:w-[97.5%] h-auto mx-4 mb-4 bg-neutral-800 px-6 py-4 flex flex-col items-center '>
-                <p className='text-3xl font-bold pb-4 flex md:block flex-col items-center'>Contact Me</p>
-                <p className='text-gray-400' >Feel free to reach out to me for any questions</p>
-                <form className='flex flex-col w-[90%] md:w-[50%] h-auto' method="Post" action="#">
-
-                    <input className='w-[100%] h-8 my-4 rounded px-4 text-black' placeholder="Your Name" type="text" id="name" name="name" required />
-
-                    <input className='w-[100%] h-8 my-4 rounded px-4 text-black' placeholder="Your Email" type="email" id="email" name="email" required />
-
-                    <textarea className='w-[100%] my-4 rounded px-4 text-black' placeholder="Message" rows="4" id="message" name="message" required></textarea>
-
-                    <input className='bg-indigo-700 w-16 h-8 rounded hover:cursor-pointer' type="submit" value="Submit" disabled />
-
-
-                </form>
-
-            </div>
+        <div
+            id='contactSection'
+            className='py-8 lg:py-16 px-4 lg:px-72 xl:px-96 max-w-full bg-neutral-800 mx-5 mb-5 rounded-md'
+        >
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Contact Me</h2>
+            <p
+                className='text-gray-400 text-center' >Feel free to reach out to me for any questions</p>
+            <form
+                className='space-y-8'
+                onSubmit={handleSubmit}>
+                <div>
+                    <label
+                        htmlFor="email"
+                        className="block mb-2 text-sm md:text-lg font-medium text-gray-300"
+                    >
+                        Email Address
+                    </label>
+                    <input
+                        className="shadow-sm border text-sm md:text-lg rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-neutral-700 border-neutral-500  text-white "
+                        id="email"
+                        type="email"
+                        name="email"
+                    />
+                    <ValidationError
+                        prefix="Email"
+                        field="email"
+                        errors={state.errors}
+                    />
+                </div>
+                <div>
+                    <label
+                        htmlFor="name"
+                        className="block mb-2 text-sm md:text-lg font-medium text-gray-300"
+                    >
+                        Name
+                    </label>
+                    <input
+                        className="shadow-sm border text-sm md:text-lg rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-neutral-700 border-neutral-500  text-white "
+                        id="name"
+                        type="text"
+                        name="name"
+                    />
+                    <ValidationError
+                        prefix="Name"
+                        field="name"
+                        errors={state.errors}
+                    />
+                </div>
+                <div>
+                    <label
+                        htmlFor="message"
+                        className="block mb-2 text-sm md:text-lg font-medium text-gray-900 dark:text-gray-300"
+                    >
+                        Message
+                    </label>
+                    <textarea
+                        className="shadow-sm border text-sm md:text-lg rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-neutral-700 border-neutral-500  text-white"
+                        id="message"
+                        name="message"
+                    />
+                    <ValidationError
+                        prefix="Message"
+                        field="message"
+                        errors={state.errors}
+                    />
+                </div>
+                <button
+                    type="submit"
+                    className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-4 md:px-8 md:text-lg rounded  items-center"
+                    disabled={state.submitting}>
+                    Submit
+                </button>
+            </form>
         </div>
-    )
+    );
 }
 
-export default Contact
+export default ContactSection
