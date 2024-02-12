@@ -17,7 +17,7 @@ function Projects({ project }) {
                             <div
                                 key={data + i}
                                 className="w-64 h-72 flex flex-col items-center text-center border-white border-2 rounded-xl p-2">
-                                <a href={data.gitUrl}><img className="w-44 h-44" src={data.imgUrl} alt="" /></a>
+                                <a href={data.gitUrl}><img className="w-44 object-cover h-44" src={data.imgUrl} alt="" /></a>
                                 <h1 className='font-bold'>{data.title}</h1>
                                 <p>{data.description}</p>
 

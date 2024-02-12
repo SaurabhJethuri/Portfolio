@@ -6,7 +6,7 @@ function About({ about }) {
             <div className="w-[90%] md:w-[30%] h-auto mx-4 my-4 bg-neutral-800 ">
 
                 <div className='flex justify-center '>
-                    <img className=' w-96 h-96 rounded-full' src="https://res.cloudinary.com/dkfa7he1b/image/upload/v1707673164/PortfolioData/IMG_20231116_204110_di8idt.jpg" alt="" />
+                    <img className=' w-96 h-96 object-cover rounded-full' src="https://res.cloudinary.com/dkfa7he1b/image/upload/v1707673164/PortfolioData/IMG_20231116_204110_di8idt.jpg" alt="" />
 
                 </div>
 
