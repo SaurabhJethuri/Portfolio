@@ -3,25 +3,25 @@ const data = [
         title: "Weather Web App",
         description: "React, Material UI",
         gitUrl: "https://github.com/SaurabhJethuri/Weather_App",
-        imgUrl: "https://res.cloudinary.com/dkfa7he1b/image/upload/v1707672304/PortfolioData/Weather_zuv8dn.avif"
+        imgUrl: "/images/Weather.avif"
     },
     {
         title: "Airbnb-Clone",
         description: "Express, Cloudinary, Bootstrap, mongoDB,",
         gitUrl: "https://github.com/SaurabhJethuri/MyMajorProject",
-        imgUrl: "https://res.cloudinary.com/dkfa7he1b/image/upload/v1707672305/PortfolioData/WanderLust_onx8bi.avif"
+        imgUrl: "/images/WanderLust.avif"
     },
     {
         title: "Portfolio",
         description: "React, Tailwind CSS",
         gitUrl: "https://github.com/SaurabhJethuri/Portfolio",
-        imgUrl: "https://res.cloudinary.com/dkfa7he1b/image/upload/v1707672305/PortfolioData/Portfolio_rklaxe.jpg"
+        imgUrl: "/images/Portfolio.jpg"
     },
     {
         title: "Diabetes Prediction",
         description: "Python, Flask, HTML, CSS, MongoDB, Jupyter Notebook",
         gitUrl: "https://github.com/SaurabhJethuri/Diabetes-Prediction-Using-Machine-Learning-",
-        imgUrl: "https://res.cloudinary.com/dkfa7he1b/image/upload/v1707672832/PortfolioData/diabetes_kexse5.webp"
+        imgUrl: "/images/diabetes.webp"
     }
 ]
 
