@@ -18,7 +18,7 @@ function About({ about }) {
                 <p className='text-white text-xl px-2 md:px-0'>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things. Let's create something amazing together!</p>
                 <div className='flex md:justify-start justify-evenly'>
                     <div className='mt-14 my-4  '>
-                        <a className="bg-indigo-700 rounded-xl font-bold px-4 py-4 text-white" href="https://drive.google.com/file/d/1oZTJuZwE7k-duECGRwQbhJxHVSBrgI3g/view?usp=sharing">Check Resume</a>
+                        <a className="bg-indigo-700 rounded-xl font-bold px-4 py-4 text-white" href="/temp/Saurabh_Resume.pdf" download="Saurabh_Resume.pdf">Download Resume</a>
                     </div>
                     <div className='mt-14 my-4 '>
                         <a className="bg-indigo-700 md:hidden rounded-xl font-bold px-4 py-4 text-white" href="https://github.com/SaurabhJethuri">Github Profile</a>
