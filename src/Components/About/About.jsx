@@ -14,7 +14,7 @@ function About({ about }) {
             <div className="w-[90%] md:w-[66.5%] h-auto md:h-96 my-4 py-4 bg-neutral-800 md:text-start md:px-4 text-center ">
                 <p className="text-yellow-400">HELLO I'M</p>
                 <h1 className='text-white font-bold text-3xl md:text-6xl'>Saurabh Jethuri</h1>
-                <p className='text-white text-xl pb-2'>I am a Web developer</p>
+                <p className='text-white text-xl pb-2'>I am a Full Stack developer</p>
                 <p className='text-white text-xl px-2 md:px-0'>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things. Let's create something amazing together!</p>
                 <div className='flex md:justify-start justify-evenly'>
                     <div className='mt-14 my-4  '>
